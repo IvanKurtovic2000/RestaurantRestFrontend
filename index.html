@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="functions.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Restaurant Management System</h1>
+            <h2>Add a Product</h2>
+            Name:<br>
+            <input id="name" type="text" name="name">
+            <br>
+            <br>
+            Description:<br>
+            <textarea id="description" rows="5" cols="20" name="description" ></textarea>
+            <br>
+            <br>
+            Price:<br>
+            <input id="price" type="number" name="price" value= 15>
+            <br>
+            <br>
+            Category:<br>
+            <select id="dropdown">
+                    <option  value="1">Vorspeise</option>
+                    <option  value="2">Hauptgericht</option>
+                    <option  value="3">Dessert</option>
+            </select>
+            <br>
+            <br>
+            Taxclass in %:<br>
+            <select id="dropdown">
+                    <option  value="1">10</option>
+                    <option  value="2">20</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit" onclick="AddProduct()">Add Product</button>
+            <br>
+            <br>
+            <br>
+    <h2>Get all Products</h2>
+    <button type="submit" onclick="GetAllProducts()">GetAllProducts</button>
+    <p id="demo"></p>
+    <br>
+    <h2>Get Product by Id</h2>
+     <input id="getid" type="number" name="" value=5 >
+    <button type="submit" onclick="GetProductById()">GetProductById</button>
+    <p id="output"></p>
+    <br>
+    <h2>Delete Product by Id</h2>
+    <input id="deleteid" type="number" name="" value=5 >
+    <button type="submit" onclick="DeleteProduct()">Delete Product</button>
+    <p id="output1"></p>
+    <br>
+    <h2>Update Product by Id</h2>
+     <input id="updateid" type="number" name="" value=5 >
+    <button type="submit" onclick="UpdateProduct()">Update Product</button>
+    <p id="output2"></p>
+
+
+
+</body>
+</html>
